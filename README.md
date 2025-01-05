@@ -109,9 +109,8 @@ Visualizations were created to represent:
    git clone <repository-url>
    cd <repository-folder>
 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ### Set Up TMDB API Key
 
