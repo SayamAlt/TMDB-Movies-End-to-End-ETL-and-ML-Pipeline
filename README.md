@@ -1,6 +1,6 @@
 # TMDB Movies ETL and ML Project
 
-This project focuses on performing end-to-end data processing, exploratory analysis, and machine learning using data from **The Movie Database (TMDB)**. The project is structured to showcase skills in data ingestion, transformation, analysis, and predictive modeling, with the ultimate goal of deriving insights and building a regression model to predict average movie ratings.
+This project focuses on performing end-to-end **cloud-based** data processing, exploratory analysis, and machine learning using data from **The Movie Database (TMDB)**. The project is structured to showcase skills in **data ingestion**, **transformation**, **cloud data migration**, **analysis**, and **predictive modeling**, with the ultimate goal of deriving insights and building a regression model to predict average movie ratings.
 
 ## Table of Contents
 
@@ -19,17 +19,17 @@ This project focuses on performing end-to-end data processing, exploratory analy
 
 ## Introduction
 
-The TMDB Movies ETL and ML Project demonstrates the integration of ETL (Extract, Transform, Load) processes with machine learning. By utilizing the TMDB API, multiple datasets related to movies were ingested and combined. The processed data underwent exploratory data analysis to uncover meaningful insights. Finally, a regression model was built to predict average movie ratings with a high degree of accuracy.
+The TMDB Movies ETL and ML Project demonstrates the integration of **ETL (Extract, Transform, Load)** processes with **machine learning** in a **cloud environment**. By utilizing the TMDB API, multiple datasets related to movies were ingested and combined, then migrated and processed using Azure Databricks and Azure Data Lake Storage Gen2. The processed data underwent exploratory data analysis to uncover meaningful insights. Finally, a regression model was built using **Spark MLLib** and **Scikit-learn** to predict average movie ratings with a high degree of accuracy.
 
 ---
 
 ## Features
 
-- **Data Ingestion**: Automated extraction of data from TMDB API for various categories (Top Rated, Popular, Upcoming, Current Movies, etc.).
-- **Data Transformation**: Merging datasets with genre information and preprocessing for analysis.
-- **Exploratory Data Analysis**: Statistical and visual insights into movie trends, ratings, popularity, and genres.
-- **Machine Learning**: Built a regression model to predict average movie ratings with an R² score of 97%.
-- **Reusable Pipeline**: A modular and scalable approach to ETL and modeling.
+- **Cloud Data Ingestion**: Automated extraction of data from TMDB API for various categories (Top Rated, Popular, Upcoming, Current Movies, etc.).
+- **Cloud-based ETL and Transformation**: Implemented using **Azure Databricks**, **PySpark**, and **Spark SQL**, with final datasets stored in **Azure Data Lake Storage Gen2**.
+- **Exploratory Data Analysis**: Statistical and visual insights into movie trends, ratings, popularity, and genres using Python and Spark.
+- **Machine Learning**: Built regression models using **Spark MLLib** and **Scikit-learn**, achieving an R² score of 97%.
+- **Reusable Pipeline**: Modular and scalable approach to ETL, cloud data migration, and modeling.
 
 ---
 
@@ -37,11 +37,11 @@ The TMDB Movies ETL and ML Project demonstrates the integration of ETL (Extract,
 
 - **Programming Language**: Python, SQL
 - **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Requests
+- **Cloud & ETL Tools**: Azure Databricks, Azure Data Lake Storage Gen2, PySpark, Spark SQL
 - **APIs**: TMDB API
-- **ETL Tools**: Azure Databricks, Azure Data Lake Storage Gen2, PySpark
-- **Version Control**: Git
 - **Machine Learning**: Regression Models, Spark MLLib
-- **Cloud**: Azure
+- **Version Control**: Git
+- **Cloud Platform**: Microsoft Azure
 
 ---
 
@@ -54,13 +54,13 @@ The TMDB Movies ETL and ML Project demonstrates the integration of ETL (Extract,
      - Upcoming Movies
      - Current Movies
      - Genre Information
-2. **Transformation**:
+2. **Transformation** (Azure Databricks + PySpark + Spark SQL):
    - Combine all movie datasets.
    - Map genre IDs to their respective names.
    - Feature engineering for better insights and model readiness (e.g., `release_year`, `movie_age`).
    - Normalize continuous variables like popularity.
 3. **Loading**:
-   - Store the processed data in a structured format for further analysis and machine learning.
+   - Store the processed and cleaned data in **Azure Data Lake Storage Gen2** for further analysis and machine learning.
 
 ---
 
@@ -82,7 +82,7 @@ Visualizations were created to represent:
 ## Machine Learning Model
 
 - **Goal**: Predict the average rating (`vote_average`) of a movie.
-- **Model**: Regression model using Scikit-learn.
+- **Model**: Regression models using both **Scikit-learn** and **Spark MLLib** for scalability.
 - **Features Used**:
   - Popularity
   - Genre
@@ -96,9 +96,9 @@ Visualizations were created to represent:
 
 ## Results
 
-- Successfully built a robust data processing pipeline.
+- Successfully built a **cloud-enabled** data processing pipeline using Azure Databricks and Azure Data Lake Storage Gen2.
 - Conducted detailed EDA to derive actionable insights.
-- Developed a high-performing regression model for movie rating prediction.
+- Developed high-performing regression models for movie rating prediction.
 - Achieved clear and actionable results through statistical and machine learning approaches.
 
 ---
