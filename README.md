@@ -35,12 +35,13 @@ The TMDB Movies ETL and ML Project demonstrates the integration of ETL (Extract,
 
 ## Technologies Used
 
-- **Programming Language**: Python
+- **Programming Language**: Python, SQL
 - **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Requests
 - **APIs**: TMDB API
-- **Environment**: Jupyter Notebook
+- **ETL Tools**: Azure Databricks, Azure Data Lake Storage Gen2, PySpark
 - **Version Control**: Git
-- **Machine Learning**: Regression Models
+- **Machine Learning**: Regression Models, Spark MLLib
+- **Cloud**: Azure
 
 ---
 
